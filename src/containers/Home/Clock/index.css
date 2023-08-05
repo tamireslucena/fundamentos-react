@@ -1,0 +1,7 @@
+.Clock {
+  height: 50%; 
+  background-color: #9ace32; 
+  display: flex; 
+  justify-content: center; 
+  align-items: center;
+}
