@@ -1,0 +1,13 @@
+.ItemsHandler {
+  height: 50%;
+  background-color: #deb987;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 14px;
+
+  .ButtonGroup {
+    display: flex;
+  }
+}

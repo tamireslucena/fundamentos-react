@@ -8,7 +8,7 @@ import { formatTime } from "../../../utils/dateHelper";
 import "./index.css"
 
 function Clock() {
-  const [clock, setClock] = useState(new Date());
+  const [clock, setClock] = useState<Date>(new Date());
 
   const updateClock = () => { 
     setClock(new Date());
