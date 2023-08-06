@@ -1,9 +1,23 @@
-import React from 'react';
+// library methods
 import { render, screen } from '@testing-library/react';
+
+// components
 import Home from './';
 
-test('renders learn react link', () => {
+test('renders the clock element', () => {
   render(<Home />);
-  const linkElement = screen.getByText(/learn react/i);
-  expect(linkElement).toBeInTheDocument();
+  const element = screen.getByTestId("clock");
+  expect(element).toBeInTheDocument();
+});
+
+test('renders the itemsHandler element', () => {
+  render(<Home />);
+  const element = screen.getByTestId("itemsHandler");
+  expect(element).toBeInTheDocument();
+});
+
+test('renders the shyBall element', () => {
+  render(<Home />);
+  const element = screen.getByTestId("shyBall");
+  expect(element).toBeInTheDocument();
 });

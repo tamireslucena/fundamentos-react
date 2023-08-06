@@ -24,7 +24,7 @@ function ShyBall() {
   }, [translate])
 
   return (
-    <div className="ShyBall">
+    <div className="ShyBall" data-testid="shyBall">
       <svg height="95%" width="100%">
         <circle cx="50" cy="50" r="40" fill="red" onMouseOver={() => setIsHovered(true)} style={{ transform: translate, transition: "transform 330ms ease-in-out" }} />
       </svg>

@@ -62,7 +62,7 @@ function ItemsHandler() {
   }
 
   return (
-    <div className="ItemsHandler">
+    <div className="ItemsHandler" data-testid="itemsHandler">
       <div className="InnerSection">
         <select className="Select" value={selectedOption} onChange={(event) => handleOnChange(event.currentTarget.value)}>
           {options.map(({ value, text }: Option) => <option key={value} disabled={value === DEFAULT_VALUE} value={value}>{text}</option>)}

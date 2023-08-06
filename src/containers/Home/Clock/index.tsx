@@ -24,7 +24,7 @@ function Clock() {
   }, []);
 
   return (
-    <div className="Clock">
+    <div className="Clock" data-testid="clock">
       {formatTime(clock)}
     </div>
   );
