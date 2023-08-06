@@ -6,8 +6,56 @@
   justify-content: center;
   align-items: center;
   gap: 14px;
+  color: #413321;
 
-  .ButtonGroup {
+  > .InnerSection {
     display: flex;
+    flex-direction: column;
+    gap: 14px;
+
+    > .ButtonGroup {
+      display: flex;
+      gap: 8px;
+
+      > .Button {
+        padding: 8px;
+        border: 0;
+        background-color: #e9d5bb; 
+        box-shadow: 0 0 10px rgba(0,0,0,0.3);
+        border-radius: 10px 10px 10px 10px;
+        color: #413321;
+      }
+    }
+
+    > .Select {
+      padding: 8px;
+      opacity: 0.8;
+      border: 0;
+      box-shadow: 0 0 10px rgba(0,0,0,0.3);
+      border-radius: 10px 10px 10px 10px;
+      color: #413321;
+    }
+
+    > .InputGroup {
+      display: flex;
+
+      > .Input {
+        padding: 8px;
+        opacity: 0.8;
+        border: 0;
+        box-shadow: 0 0 10px rgba(0,0,0,0.3);
+        border-radius: 10px 0px 0px 10px;
+        color: #413321;
+      }
+
+      > .Button {
+        padding: 8px;
+        border: 0;
+        background-color: #e9d5bb; 
+        box-shadow: 0 0 10px rgba(0,0,0,0.3);
+        border-radius: 0px 10px 10px 0px;
+        color: #413321;
+      }
+    }
   }
 }

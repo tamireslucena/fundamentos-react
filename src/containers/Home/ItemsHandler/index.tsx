@@ -61,18 +61,21 @@ function ItemsHandler() {
 
   return (
     <div className="ItemsHandler">
-      <select name="option" id="option" value={selectedOption} onChange={(event) => handleOnChange(event.currentTarget.value)}>
-        {options.map(({ value, text }: Option) => <option key={value} disabled={value === DEFAULT_VALUE} value={value}>{text}</option>)}
-      </select>
-      <input type="text" placeholder="Insira um item" value={newOption} onChange={(event) => setNewOption(event.target.value)} /> 
-      <div className="ButtonGroup">
-        <button type="button" onClick={addOption}>Adicionar</button>
-        <button type="button" onClick={removeOption}>Remover</button>
-        <button type="button" onClick={cleanBox}>Limpar caixa</button>
+      <div className="InnerSection">
+        <select className="Select" value={selectedOption} onChange={(event) => handleOnChange(event.currentTarget.value)}>
+          {options.map(({ value, text }: Option) => <option key={value} disabled={value === DEFAULT_VALUE} value={value}>{text}</option>)}
+        </select>
+        <div className="InputGroup">
+          <input type="text" className="Input" placeholder="Insira um item" value={newOption} onChange={(event) => setNewOption(event.target.value)} /> 
+          <button type="button" className="Button" onClick={cleanBox}>Limpar</button>
+        </div>
+        <div className="ButtonGroup">
+          <button type="button" className="Button" onClick={addOption}>Adicionar</button>
+          <button type="button" className="Button" onClick={removeOption}>Remover</button>
+        </div>
+        {selectedOptionText}
       </div>
-      {selectedOptionText}
     </div>
-
 
   );
 }
