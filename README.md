@@ -1,46 +1,113 @@
-# Getting Started with Create React App
+<br />
+<p align="center">
+  <h2 align="center">Desafio Geopixel</h2>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+  <p align="center">
+    Teste de proficiência em programação
+    <br />
+  </p>
+</p>
 
-## Available Scripts
+<details open="open">
+  <summary>Tabela de conteúdos</summary>
+  <ol>
+    <li>
+      <a href="#desafios">Desafios</a>
+      <ul>
+        <li><a href="#relógio">Relógio</a></li>
+      </ul>
+      <ul>
+        <li><a href="#manipulador-de-itens">Manipulador de Itens</a></li>
+      </ul>
+      <ul>
+        <li><a href="#bola-tímida">Bola Tímida</a></li>
+      </ul>
+    </li>
+    <li>
+      <a href="#tecnologias-utilizadas">Tecnologias Utilizadas</a>
+    </li>
+    <li>
+      <a href="#instruções-gerais">Instruções Gerais</a>
+      <ul>
+        <li><a href="#configurações-e-instalações">Configurações e Instalações</a></li>
+      </ul>
+    </li>
+   
+  </ol>
+</details>
 
-In the project directory, you can run:
+## Desafios
 
-### `npm start`
+### Relógio
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+Crie um relógio que leia a hora atual do sistema e exiba o horário no formato hh:mm:ss na tela.
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+### Manipulador de Itens
 
-### `npm test`
+Crie um conjunto de componentes que forneçam ao usuário as interfaces pare selecionar itens em uma
+lista, visualizar qual item está atualmente selecionado, meios no qual possa adicionar e remover itens da
+lista e limpar a caixa de inserção de novos itens.
+Você deverá criar uma caixa de seleção que exiba os itens atuais disponíveis a serem selecionados e/ou
+removidos. A caixa deverá ter um item de placeholder informativo que deve iniciar selecionado, mas não
+deve ser permitido sua seleção posteriormente. Além do placeholder, deverá existir ao menos um item
+inicial na lista.
+Crie um input de texto que permita ao usuário escrever os itens a serem adicionados ou removidos da
+lista. O input deverá ter um texto de placeholder que informe ao usuário seu propósito de utilização.
+Crie um conjunto de 3 botões, sendo um botão responsável por adicionar o item escrito no input na lista,
+outro deve remover o item escrito no input da lista e um último que apenas limpa o que estiver escrito
+no input.
+Por fim, crie um texto que exiba qual é o item atualmente selecionado pelo usuário.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Regras entre os componentes:
 
-### `npm run build`
+- Os itens na lista devem ser case-sensitives, ou seja, não devem existir itens exatamente iguais na
+  lista, por exemplo, a ocorrência de “ eopixel” e “ eopixel” não deve acontecer, mas “geopixel” e
+  “GeoPixel" podem existir
+- Para o item ser removido da lista, deve-se digitá-lo exatamente igual ao que se encontra na lista
+- Ao adicionar ou remover um item da lista, o input ser limpo
+- Não permita que string vazia seja adicionada à lista
+- Notifique o usuário, com uma mensagem clara, sempre que ele tentar realizar uma ação que não
+  deva, como adicionar um item repetido
+- Notifique o usuário, com uma mensagem clara, sempre que uma ação for bem-sucedida,
+  informando o que acabou de acontecer, como inserir um item na lista ou apagar um item com
+  sucesso
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Bola Tímida
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Criar um componente em formato de bola que quando o usuário realizar a ação de hover sobre ela com
+o cursor, ela mude de posição aleatoriamente dentro de seu espaço estabelecido.
+A mudança de posição deve ser feita com uma transição e não mudar imediatamente para o novo local.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Tecnologias Utilizadas
 
-### `npm run eject`
+O projeto foi criado usando as tecnologias:
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+- [Node.js] [React] [TypeScript]
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+<!-- GETTING STARTED -->
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## Instruções Gerais
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+A seguir estão as instruções para a instalação, configuração e uso do projeto.
 
-## Learn More
+### Configurações e Instalações
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+1. Clone o repositório
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+```sh
+  git clone https://github.com/tamireslucena/fundamentos-react
+```
+
+2. Instalar dependências
+
+```sh
+  npm install
+```
+
+3. Subir a aplicação
+
+```sh
+  npm run start
+```
+
+> A página estará disponível em <a href="localhost:3000">localhost:3000</a>.
