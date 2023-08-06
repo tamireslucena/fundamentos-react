@@ -1,6 +1,9 @@
 // library methods
 import { useEffect, useState } from "react";
 
+// utilities
+import { getRandomArbitrary } from "../../../utils/numberHelper";
+
 // styles
 import "./index.css"
 
@@ -11,11 +14,6 @@ function ShyBall() {
   const [translate, setTranslate] = useState<string>(`translateX(${0}%) translateY(${0}%)`)
 
 
-  // methods
-  function getRandomArbitrary(min: number, max: number) {
-    return Math.random() * (max - min) + min;
-  }
-  
   useEffect(() => {
     if (!isHovered) return
     setTranslate(`translateX(${getRandomArbitrary(20, 90)}%) translateY(${getRandomArbitrary(20, 90)}%)`)
