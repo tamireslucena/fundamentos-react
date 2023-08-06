@@ -54,7 +54,7 @@ function ItemsHandler() {
     
     setOptions((prev) =>  [...prev.filter(({ value }: Option) => value !== alreadyExists.value)]);
 
-    if (alreadyExists.value === selectedOption) setSelectedOption("");
+    if (alreadyExists.value === selectedOption) setSelectedOption(DEFAULT_VALUE);
     
     showAlert("Item removido com sucesso");
   }
