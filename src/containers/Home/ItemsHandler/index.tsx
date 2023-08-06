@@ -4,9 +4,11 @@ import { useState } from "react";
 // types
 import { Option } from "../../../types";
 
+// constants
+import { DEFAULT_VALUE } from "../../../constants";
+
 // styles
 import "./index.css"
-import { DEFAULT_VALUE } from "../../../constants";
 
 function ItemsHandler() {
 
